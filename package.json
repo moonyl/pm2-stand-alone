@@ -1,0 +1,26 @@
+{
+  "name": "pm2-stand-alone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin-back": "pm2-stand-alone.js",
+  "bin": "node_modules/pm2/bin/pm2",
+  "pkg": {
+    "targets": [
+      "node16-win-x64",
+      "node16-linux-x64"
+    ],
+    "outputPath": "package"
+  },
+  "scripts": {
+    "start": "node pm2-stand-alone",
+    "start:test": "node node_modules/pm2/bin/pm2",
+    "pkg": "npx pkg ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pm2": "^5.3.0"
+  }
+}
