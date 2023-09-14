@@ -39,3 +39,5 @@ jobs:
           README.md
           README_EN.md
           LICENSE
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
